@@ -2,7 +2,7 @@
 
 Keras implemenation of the candidate sampling technique called Noise Contrastive Estimation (NCE). This is a Keras Layer which uses the TF implementation of NCE loss.
 
-*Mnih, Teh. A fast and simple algorithm for training neural probabilistic language models. ICML 2012*
+*Gutmann, Hyvarinen. Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. AISTATS 2010*
 
 
 
