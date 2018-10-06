@@ -1,19 +1,10 @@
-from keras.layers import (
-    Input,
-    Dense,
-    Embedding,
-    Concatenate,
-    Flatten,
-    Average,
-    Reshape,
-    Lambda,
-    Activation,
-)
+from keras.layers import Input, Dense, Embedding, Flatten
 from keras.models import Model
 import keras
 import keras.backend as K
 import numpy as np
 from nce import NCE
+
 
 def build(num_items, k, num_classes):
     inputs = Input(shape=(1,), dtype="int32", name="iids")
@@ -30,6 +21,7 @@ def build(num_items, k, num_classes):
     model.compile(optimizer="adam", loss=None)
 
     return model
+
 
 NUM_ITEMS = 1000000
 D = 5

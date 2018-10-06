@@ -1,14 +1,4 @@
-from keras.layers import (
-    Input,
-    Dense,
-    Embedding,
-    Concatenate,
-    Flatten,
-    Average,
-    Reshape,
-    Lambda,
-    Activation,
-)
+from keras.layers import Input, Dense, Embedding, Flatten
 from keras.models import Model
 
 import keras.backend as K
